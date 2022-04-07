@@ -14,5 +14,6 @@ jobs:
       - name: Testme
         run: |
           echo git@github.com:${{ github.repository }}.git
+          echo ${{ github.actor }}
           echo ${GITHUB_ACTOR}
           echo ${GITHUB_REPOSITORY}
