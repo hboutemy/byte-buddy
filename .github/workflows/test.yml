@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - wf-test
+
+jobs:
+  hotspot-ea:
+    name: HotSpot (EA)
+    runs-on: ubuntu-18.04
+    continue-on-error: true
+    steps:
+      - name: Testme
+        run: |
+          echo ${{ github.repository }}
+          echo ${GITHUB_REPOSITORY}
